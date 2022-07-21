@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Poppins:ital,wght@0,600;1,400&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1321px;
+    margin: 0 auto;
+}
+
+
+
+/*header part*/
+
+.header-box {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    margin: 0 auto;
+    max-width: 90vw;
+    max-height: 100vh;
+}
+
+.right-part,
+.left-part {
+    width: 35vw;
+}
+
+.left-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.left-part h1 {
+    font-size: 5rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+    position: relative;
+    color: red;
+    border: 1px solid red;
+    border-radius: 0.3125rem;
+    display: inline-block;
+    z-index: 1;
+}
+
+.btn .right-arrow {
+    font-size: 0.75rem;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:hover:after {
+    width: 100%;
+
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 0;
+    z-index: -1;
+    height: 100%;
+    background-color: red;
+    border-radius: 0.3125rem;
+    transition: width 0.5s ease;
+}
+
+.right-part>img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.right-part {
+    align-self: flex-end;
+}
