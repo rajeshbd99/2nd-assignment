@@ -44,7 +44,7 @@ body {
     font-size: 5rem;
 }
 
-.btn {
+.button {
     text-decoration: none;
     padding: 0.625rem 1.25rem;
     position: relative;
@@ -55,20 +55,20 @@ body {
     z-index: 1;
 }
 
-.btn .right-arrow {
+.button .right-arrow {
     font-size: 0.75rem;
 }
 
-.btn:hover {
+.button:hover {
     color: white;
 }
 
-.btn:hover:after {
+.button:hover:after {
     width: 100%;
 
 }
 
-.btn:after {
+.button:after {
     content: "";
     position: absolute;
     top: 0;
@@ -89,4 +89,116 @@ body {
 
 .right-part {
     align-self: flex-end;
+}
+
+
+/*section style */
+.blog-buttons {
+    width: 368px;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+}
+
+.buttons li {
+    list-style: none;
+}
+
+.buttons a {
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3125rem;
+}
+
+
+.buttons a:active {
+    background-color: #DD0000;
+}
+
+.buttons a:hover {
+    background-color: #DD0000;
+}
+
+/*blogs style */
+
+.blog-box {
+    display: grid;
+    grid-template-columns: 368px 2fr;
+    column-gap: 1.25rem;
+    max-width: 90vw;
+    margin: 8.125rem auto;
+    position: relative;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625rem;
+}
+
+.blog {
+    border: 1px solid gainsboro;
+    border-radius: 0.625rem;
+}
+
+.blog-img img {
+    width: 100%;
+    display: block;
+}
+
+.transfer-button {
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem 1rem;
+    border: 1px solid black;
+    border-radius: 0.3125rem;
+}
+
+.blog-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: .8375rem;
+    padding: 1.25rem;
+}
+
+.blog-info h3 {
+    font-size: 1.125rem;
+}
+
+.blog-icon {
+    width: 40%;
+    display: flex;
+    column-gap: 20px;
+}
+
+.blog-icon a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+    color: black;
+}
+
+.all-button {
+    text-decoration: none;
+    padding: 0.3rem 1.2rem;
+    background-color: #DD0000;
+    color: white;
+    border-radius: .3125rem;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    display: none;
 }
