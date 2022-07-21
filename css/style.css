@@ -258,3 +258,190 @@ body {
 hr {
     width: 85%;
 }
+
+/*upcoming match style */
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625rem;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 0.3125rem;
+}
+
+.match-flag {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.first-flag img {
+    width: 100%;
+}
+
+.second-flag img {
+    width: 100%;
+}
+
+.match-flag>p {
+    font-size: 1.125rem;
+}
+
+.match-info {
+    text-align: center;
+}
+
+.match-info>small {
+    font-weight: 200;
+    color: gray;
+}
+
+/*mobile-device */
+@media only screen and (max-width:576px) {
+
+    .header-container h1 {
+        font-size: 20px;
+    }
+
+
+    .header-container {
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-side {
+        align-self: center;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .blog-buttons {
+        justify-self: center;
+        background-color: white;
+    }
+
+    .blog-buttons a {
+        border: 1px solid gray;
+    }
+
+    .matches,
+    .blogs {
+        grid-template-columns: 1fr;
+
+    }
+
+    .match-flag {
+        justify-content: space-between;
+    }
+
+    .match-flag p {
+        font-size: 3em;
+    }
+
+    .blog-img,
+    .blog-info {
+        height: 50%;
+    }
+
+    .blog-img img {
+        height: 100%;
+    }
+
+
+    .blog-info {
+        width: 80%;
+        height: 100%;
+
+    }
+
+    .social-icon {
+        width: 0 auto;
+    }
+
+    .blogs {
+        width: 90vw;
+
+    }
+
+    .blog-buttons {
+        width: 90vw;
+    }
+
+    .social-icons {
+        width: 40%;
+
+    }
+
+    .footer-list {
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+    }
+
+    .footer-container {
+        height: 50vh;
+    }
+
+}
+
+/*tablet device*/
+@media only screen and (min-width:577px) and (max-width:968px) {
+    .header-container h1 {
+        font-size: 30px;
+    }
+
+    .blog-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .blog-buttons {
+        width: 90vw;
+        height: 10%;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+
+    .blog-buttons a {
+        width: 25vw;
+        border: 1px solid gray;
+    }
+
+    .matches,
+    .blogs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .view-all-button {
+        display: block;
+        bottom: -3%;
+    }
+
+    .footer-list {
+        flex-wrap: wrap;
+        width: 40%;
+    }
+
+    .match-flag {
+        justify-content: space-between;
+    }
+
+    .footer-container {
+        height: 30vh;
+    }
+
+
+}
